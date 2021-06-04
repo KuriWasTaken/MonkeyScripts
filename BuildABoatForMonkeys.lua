@@ -50,11 +50,6 @@ userInput.InputBegan:Connect(CheckForHide)
 
 AutoFarm:Toggle("AutoFarm", function(t)
         on = t
-        if t == false then
-            game.Workspace.Gravity = 192
-        else
-            game.Workspace.Gravity = 0
-        end
 end)
 
 AutoFarm:Toggle("AntiAFK", function(t)
