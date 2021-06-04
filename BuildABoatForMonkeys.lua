@@ -28,10 +28,33 @@ local debounce = false
 local on = false
 local aAF = false
 
+local visible = true
+local userInput = game:GetService("UserInputService")
+local function CheckForHide(input, gameProcessed)
+
+            local keycode = input.KeyCode
+
+            if keycode == Enum.KeyCode.RightShift then 
+                    if visible == true then
+                        visible = false
+                        game.CoreGui.Library.MainFrame.Visible = false
+                    else
+                        visible = true
+                        game.CoreGui.Library.MainFrame.Visible = true
+                    end
+            end
+end
+userInput.InputBegan:Connect(CheckForHide)
+
 --AutoFarm
 
 AutoFarm:Toggle("AutoFarm", function(t)
-    on = t
+        on = t
+        if t == false then
+            game.Workspace.Gravity = 192
+        else
+            game.Workspace.Gravity = 0
+        end
 end)
 
 AutoFarm:Toggle("AntiAFK", function(t)
