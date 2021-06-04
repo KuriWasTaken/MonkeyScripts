@@ -17,7 +17,6 @@ local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/
 local s = VLib:Window("BABFMonkey", "BABFMonkey", "B")
 
 local AutoFarm = s:Tab("AutoFarm")
-local ESPT = s:Tab("ESP")
 
 local credits = s:Tab("Credits")
 credits:Label("Script: Kuri#1686")
