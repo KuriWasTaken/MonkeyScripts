@@ -110,28 +110,28 @@ local function ZBYZ_fake_script() -- Load.LocalScript
 	if game.PlaceId == 606849621 then
 		script.Parent.Parent.TextLabel.Text = "Jailbreak"
 		wait(2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
 		script.Parent.Parent.Parent:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
 	elseif game.PlaceId == 292439477 then
 		script.Parent.Parent.TextLabel.Text = "Phantom Forces"
 		wait(2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/PhantomMonkey.lua"))()
 		script.Parent.Parent.Parent:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/PhantomMonkey.lua"))()
 	elseif game.PlaceId == 537413528 then
 		script.Parent.Parent.TextLabel.Text = "BABFT"
 		wait(2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/BuildABoatForMonkeys.lua"))()
 		script.Parent.Parent.Parent:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/BuildABoatForMonkeys.lua"))()
 	elseif game.PlaceId == 2377868063 or game.PlaceId == 3606833500 or game.PlaceId == 2633045061 then
 		script.Parent.Parent.TextLabel.Text = "Strucid"
 		wait(2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/StrucidMonkey.lua"))()
 		script.Parent.Parent.Parent:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/PhantomMonkey/main/StrucidMonkey.lua"))()
 	elseif game.PlaceId == 2677609345 then
 		script.Parent.Parent.TextLabel.Text = "Sound Space"
 		wait(2)
+		script.Parent.Parent.Parent:Destroy()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/SoundMonkey.lua"))()
-		script.Parent.Parent.Parent:Destroy()	
 	else
 		script.Parent.Parent.TextLabel.Text = "Error"
 		wait(2)
