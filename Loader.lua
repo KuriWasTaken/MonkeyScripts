@@ -112,6 +112,7 @@ local function ZBYZ_fake_script() -- Load.LocalScript
 		wait(2)
 		script.Parent.Parent.Parent:Destroy()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+		game.CoreGui.MonkeyHub:Destroy()
 	elseif game.PlaceId == 292439477 then
 		script.Parent.Parent.TextLabel.Text = "Phantom Forces"
 		wait(2)
